@@ -34,20 +34,26 @@ try it out.
 This solution was quite simple to implement, and I was able to run it on my laptop. However, metrics
 values are not the best, but can be used as baseline.
 
-## Second Solution | Spacy SpanCat
+## *Second Solution | Spacy SpanCat*
 
 ### Idea
+
+There exist an experimental feature in spacy that fits for nested NER
+task: [Span Categorizer](https://spacy.io/api/spancategorizer). It works quite like RCNN, but
+instead of boundary boxes for ROI it works with n-grams:
 ![The Spancat architecture](spancat_arch.png) <br>
 The Spancat architecture. Source: https://explosion.ai/blog/spancat
-TODO
 
+While implementing this solution I used the links above as sources.
 
 ### Metrics
+
 | Metric               | Value |
 |----------------------|-------|
 | F1 macro (val.spacy) | 0.80  |
 | F1 macro (dev.jsonl) | 0.67  |
 
 ### Conclusion
-This is the best solution in terms of F1 score.
-TODO
+
+This is the best solution in terms of F1 score. Unlike the previous solution, it requires more
+computation power and time to implement, but allows to fine-tune both tokenizer and model to get better results.
