@@ -37,7 +37,10 @@ values are not the best, but can be used as baseline.
 ## Second Solution | Spacy SpanCat
 
 ### Idea
+![The Spancat architecture](img.png)
+The Spancat architecture. Source: https://explosion.ai/blog/spancat
 TODO
+
 
 ### Metrics
 | Metric               | Value |
@@ -46,4 +49,5 @@ TODO
 | F1 macro (dev.jsonl) | 0.67  |
 
 ### Conclusion
+This is the best solution in terms of F1 score.
 TODO
