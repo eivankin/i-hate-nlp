@@ -34,10 +34,16 @@ try it out.
 This solution was quite simple to implement, and I was able to run it on my laptop. However, metrics
 values are not the best, but can be used as baseline.
 
-## Second Solution | Fine-tune GLiNER???
+## Second Solution | Spacy SpanCat
 
 ### Idea
+TODO
 
 ### Metrics
+| Metric               | Value |
+|----------------------|-------|
+| F1 macro (val.spacy) | 0.80  |
+| F1 macro (dev.jsonl) | 0.67  |
 
 ### Conclusion
+TODO
