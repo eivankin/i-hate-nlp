@@ -37,7 +37,7 @@ values are not the best, but can be used as baseline.
 ## Second Solution | Spacy SpanCat
 
 ### Idea
-![The Spancat architecture](spancat_arch.png)
+![The Spancat architecture](spancat_arch.png) <br>
 The Spancat architecture. Source: https://explosion.ai/blog/spancat
 TODO
 
