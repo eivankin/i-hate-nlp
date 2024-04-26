@@ -16,11 +16,7 @@
 ### Idea
 
 I made a small research on pretrained nested NER models and have found quite recent
-paper "[GLiNER: Generalist Model for Named Entity Recognition using Bidirectional Transformer](https://arxiv.org/abs/2311.08526)"
-submitted last November. Authors report that their model outperforms LLMs at zero-shot NER and
-requires much less computation resources. Fortunately, their model had multilingual version and was
-accompanied by a nice wrapping [Python library](https://github.com/urchade/GLiNER), so I decided to
-try it out.
+paper "[GLiNER: Generalist Model for Named Entity Recognition using Bidirectional Transformer](https://arxiv.org/abs/2311.08526)" submitted last November. Authors report that their model outperforms LLMs at zero-shot NER and requires much less computation resources. Fortunately, their model had multilingual version and was accompanied by a nice wrapping [Python library](https://github.com/urchade/GLiNER), so I decided to try it out.
 
 ### Metrics
 
@@ -31,16 +27,13 @@ try it out.
 
 ### Conclusion
 
-This solution was quite simple to implement, and I was able to run it on my laptop. However, metrics
-values are not the best, but can be used as baseline.
+This solution was quite simple to implement, and I was able to run it on my laptop. However, metrics values are not the best, but can be used as baseline.
 
 ## *Second Solution | Spacy SpanCat*
 
 ### Idea
 
-There exist an experimental feature in spacy that fits for nested NER
-task: [Span Categorizer](https://spacy.io/api/spancategorizer). It works quite like RCNN, but
-instead of boundary boxes for ROI it works with n-grams:
+There exist an experimental feature in spacy that fits for nested NER task: [Span Categorizer](https://spacy.io/api/spancategorizer). It works quite like RCNN, but instead of boundary boxes for ROI it works with n-grams:
 ![The Spancat architecture](spancat_arch.png) <br>
 The Spancat architecture. Source: https://explosion.ai/blog/spancat
 
