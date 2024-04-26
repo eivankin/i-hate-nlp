@@ -48,10 +48,11 @@ While implementing this solution I used the links above as sources.
 
 ### Metrics
 
-| Metric               | Value |
-|----------------------|-------|
-| F1 macro (val.spacy) | 0.80  |
-| F1 macro (dev.jsonl) | 0.67  |
+| Metric                | Value |
+|-----------------------|-------|
+| F1 macro (val.spacy)  | 0.80  |
+| F1 macro (dev.jsonl)  | 0.67  |
+| F1 macro (test.jsonl) | 0.73  |
 
 ### Conclusion
 
